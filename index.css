@@ -1,0 +1,163 @@
+
+
+@font-face {
+    font-family: 'Agave Nerd Font Mono';
+    src: url('./fonts/AgaveNerdFont-Regular.ttf') format('truetype');
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    color: #2C2A2F;
+}
+
+*{
+    font-family: 'Agave Nerd Font Mono', monospace;
+}
+
+.contenedor{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pantalla{
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.pantalla_superior{
+    height: 15%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+.pantalla_inferior{
+    height: 15%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    color: #73777e;
+}
+
+.botones_centro{
+    height: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.historial{
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    bottom: -400px;
+    transition: ease 0.5s;
+    overflow-y: auto;
+    border-radius: 15px 15px 0 0;
+    box-shadow: -1px -1px 20px 0px #00000080;
+    background: white;
+    padding-top: 1rem;
+}
+
+.historial.activo{
+    bottom: 0;
+}
+
+.historial_operacion{
+    padding: 0 1rem;
+    height: 50px;
+    margin-bottom: 1.5rem;
+}
+
+.historial_operacion .operacion{
+    text-align: right;
+    font-size: 1rem;
+    color: #73777e;
+}
+
+.historial_operacion .resultado{
+    text-align: right;
+    font-size: 1.3rem;
+}
+
+.boton_transparente{
+    background: transparent;
+    width: 20%;
+    height: 80%;
+    border: none;
+    font-size: 1.3rem;
+    color: inherit;
+}
+
+.botones{
+    height: 50%;
+    padding: 0.6rem 0.6rem 0 0.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #E0E0E0;
+}
+
+.botones .contenedor_boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 20%;
+}
+
+.botones .contenedor_boton .boton{
+    width: 75%;
+    height: 65%;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 40px;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-azul{
+    color: #3F5E95;
+}
+
+.bg-default{
+    background: #F2F0F5;
+}
+
+.bg-default:hover{
+    background: #e5e5e5 !important;
+}
+
+.bg-azul{
+    background: #DBE2FC;
+    color: #3D578A;
+}
+
+.bg-azul:hover{
+    background: #C4D2F2;
+}
+
+.bg-azul-oscuro{
+    background: #3F5E95;
+    color: white !important
+}
+
+.bg-azul-oscuro:hover{
+    background: #2F4A7A;
+}

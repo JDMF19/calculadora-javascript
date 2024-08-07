@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Calculadora</title>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link href="./index.css" rel="stylesheet">
+ 
+    </head>
+    <body>
+
+        <div class="contenedor">
+
+            <div class="pantalla">
+
+                <div class="pantalla_superior"></div>
+                <div class="pantalla_inferior"></div>
+
+            </div>
+
+            <div class="botones_centro">
+
+                <button class="boton_transparente" id="boton_historial">
+                    <i class="bx bx-history"></i>
+                </button>
+
+            </div>
+
+            <div class="botones">
+
+                <div class="contenedor_boton"><button class="boton bg-azul boton_control">AC</button></div>
+                <div class="contenedor_boton"><button class="boton bg-azul boton_control"><</button></div>
+                <div class="contenedor_boton"><button class="boton bg-azul boton_control">+/-</button></div>
+                <div class="contenedor_boton"><button class="boton bg-azul boton_operacion">÷</button></div>
+                <div class="contenedor_boton"><button class="boton bg-default boton_numerico">7</button></div>
+                <div class="contenedor_boton"><button class="boton bg-default boton_numerico">8</button></div>
+                <div class="contenedor_boton"><button class="boton bg-default boton_numerico">9</button></div>
+                <div class="contenedor_boton"><button class="boton bg-azul boton_operacion">x</button></div>
+                <div class="contenedor_boton"><button class="boton bg-default boton_numerico">4</button></div>
+                <div class="contenedor_boton"><button class="boton bg-default boton_numerico">5</button></div>
+                <div class="contenedor_boton"><button class="boton bg-default boton_numerico">6</button></div>
+                <div class="contenedor_boton"><button class="boton bg-azul boton_operacion">-</button></div>
+                <div class="contenedor_boton"><button class="boton bg-default boton_numerico">1</button></div>
+                <div class="contenedor_boton"><button class="boton bg-default boton_numerico">2</button></div>
+                <div class="contenedor_boton"><button class="boton bg-default boton_numerico">3</button></div>
+                <div class="contenedor_boton"><button class="boton bg-azul boton_operacion">+</button></div>
+                <div class="contenedor_boton"><button class="boton bg-default boton_control">%</button></div>
+                <div class="contenedor_boton"><button class="boton bg-default boton_numerico">0</button></div>
+                <div class="contenedor_boton"><button class="boton bg-default boton_numerico">.</button></div>
+                <div class="contenedor_boton"><button class="boton bg-azul-oscuro boton_control">=</button></div>
+
+            </div>
+
+            <div class="historial"></div>
+
+        </div>
+
+        <script src="./index.js"></script>
+    </body>
+</html>
